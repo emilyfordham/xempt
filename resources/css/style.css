@@ -8,7 +8,7 @@
 
   --main-font: "Quicksand", sans-serif;
 
-  --link-color: #f000;
+  --link-color:black;
 
   /* themes */
 
@@ -24,7 +24,10 @@ body {
   font-family: var(--main-font);
   font-weight: 300;
   line-height: 1.4;
+  
 }
+
+a {color:var(--link-color)}
 
 header,
 .nav-wrapper,
@@ -130,6 +133,10 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+}
+
+h1 {
+    color: grey
 }
 
 /* ++++++++++++++++++++++++++++ layout    */
