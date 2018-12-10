@@ -24,7 +24,9 @@
 
 body {
     padding: 3%;
-    font-family: var(--main-font)
+    font-family: var(--main-font);
+    font-weight: 300;
+    line-height: 1.4;
 
 }
 
@@ -134,13 +136,23 @@ footer ul {
 
 /* ++++++++++++++++++++++++++++ typography    */
 
+h1, h2, h3, h4 {
+    font-weight: 500
+}
+
 
 
 /* ++++++++++++++++++++++++++++ layout    */
 
+.page-content {
+    overflow: hidden
+}
+
+
 .box {
     border: 1px solid black;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .box-services {
@@ -162,4 +174,15 @@ footer ul {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px
     }
+}
+
+/* ++++++++++++++++++++++++++++ image alignment   */
+
+@media screen and (min-width: 800px) {
+
+.align-right{
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 250px;
+}
 }
