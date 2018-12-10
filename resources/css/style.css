@@ -58,6 +58,17 @@ body {
     text-decoration: none;
 }
 
+/* ++++++++++++++++++++++++++++ footer    */
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px auto;
+
+    max-width: 500px;
+}
 
 
 /* ++++++++++++++++++++++++++++ typography    */
