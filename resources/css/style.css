@@ -31,6 +31,16 @@ footer {
         margin-right: auto;
 }
 
+@media screen and (min-width: 800px) {
+    header,
+    .nav-wrapper,
+    main,
+    footer {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
 /* ++++++++++++++++++++++++++++ header    */
 
 header {
@@ -38,14 +48,33 @@ header {
     top: 0;
 }
 
+@media screen and (min-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .logo-wrapper a {
     display: block;
     text-align: center
 }
 
-.logo-wrapper img {
-    
+.desktop-logo {
+    display: none
 }
+
+@media screen and (min-width: 800px) {
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: block;
+    }
+}
+
 
 
 /* ++++++++++++++++++++++++++++ nav    */
@@ -54,6 +83,8 @@ header {
 
     margin-top: 20px;
     margin-bottom: 20px;
+
+    min-width: 50%;
 
 }
 

@@ -1,94 +1,113 @@
-<!doctype html>
-
-<html>
-
-<head>
-
-    <title></title>
-
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
-
-    <link rel="stylesheet" href="resources/css/normalize.css" />
-    <link rel="stylesheet" href="resources/css/style.css" />
-
-</head>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,500');
+:root {
 
 
-<body>
+    --main-text-color: #000;
+
+    --heading-text-color: #808080;
+
+    --site-width: 1200px;
+
+    --main-font: 'Quicksand', sans-serif;
+
+    --link-color: #f000;
+}
+
+/* ++++++++++++++++++++++++++++ site defaults    */
+
+body {
+    padding: 3%;
+    font-family: var(--main-font)
+
+}
+
+header,
+.nav-wrapper,
+main,
+footer {
+        max-width: var(--site-width);
+        
+        margin-left: auto;
+        margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+    header,
+    .nav-wrapper,
+    main,
+    footer {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* ++++++++++++++++++++++++++++ header    */
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo-wrapper a {
+    display: block;
+    text-align: center
+}
+
+.logo-wrapper img {
+    
+}
+
+
+/* ++++++++++++++++++++++++++++ nav    */
+.nav-wrapper {
+    
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    min-width: 50%;
+
+}
+
+.nav-wrapper ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-wrapper a {
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ++++++++++++++++++++++++++++ footer    */
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px auto;
+
+    max-width: 500px;
+}
+
+
+/* ++++++++++++++++++++++++++++ typography    */
 
 
 
-    <header>
-
-        <div class="logo-wrapper">
-            <a href="index.html"> <img src="resources/images/xempt_mktg_logo.png" alt="xempt logo" /> </a>
-        </div>
-
-        <div class="nav wrapper">
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="me.html">Me</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-
-
-    </header>
-
-
-    <main>
-        <section class="">
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="social links">
-            <ul>
-                <li>
-                    <a href="https://facebook.com">
-                        <img src="resources/images/facebook_logo.png" alt="Facebook Logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com">
-                        <img src="resources/images/instagram_logo.png" alt="instagram Logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com">
-                        <img src="resources/images/linkedin_logo.png" alt="LinkedIn Logo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-
-
-
-</body>
-
-
-
-
-
-
-</html>
+/* ++++++++++++++++++++++++++++ layout    */
